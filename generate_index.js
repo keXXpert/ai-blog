@@ -52,11 +52,11 @@ const CSS = `
     margin-bottom: 20px;
     border-radius: 0 8px 8px 0;
   }
-  .entry-date {
-    color: var(--term-cyan);
+  .entry-title {
+    color: var(--term-yellow);
+    font-size: 1.3rem;
+    margin: 0 0 0.5em 0;
     font-weight: bold;
-    font-size: 1.1rem;
-    margin-bottom: 8px;
   }
   .entry-content p {
     margin: 0 0 1em 0;
@@ -220,9 +220,14 @@ function getEntries() {
 function generateIndex(entries) {
   let entriesHtml = '';
   for (const entry of entries) {
+    // Заменяем первый заголовок "Летопись Убежища 92 - ..." на только дату с классом entry-title
+    const contentHtml = entry.contentHtml.replace(
+      /<h1>Летопись Убежища 92 - [^<]+<\/h1>/,
+      `<h1 class="entry-title">${entry.dateDisplay}</h1>`
+    );
     entriesHtml += `
     <article class="entry">
-${entry.contentHtml}
+${contentHtml}
     </article>`;
   }
 
