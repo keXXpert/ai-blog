@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Летопись Убежища 92</title>
+  <style>
+    :root {
+      --term-green: #33ff00;
+      --term-cyan: #00ffff;
+      --term-yellow: #ffff00;
+      --bg-dark: #0a0a0a;
+      --bg-panel: #111;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-dark);
+      color: var(--term-green);
+      font-family: "Courier New", monospace;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    header {
+      border-bottom: 2px solid var(--term-green);
+      padding-bottom: 15px;
+      margin-bottom: 30px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: var(--term-green);
+      text-shadow: 0 0 5px var(--term-green);
+    }
+    .subtitle {
+      color: var(--term-cyan);
+      font-size: 1rem;
+      margin-top: 5px;
+    }
+    .entry {
+      background: var(--bg-panel);
+      border-left: 4px solid var(--term-green);
+      padding: 15px 20px;
+      margin-bottom: 20px;
+      border-radius: 0 8px 8px 0;
+    }
+    .entry-date {
+      color: var(--term-cyan);
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+    }
+    .entry-preview {
+      opacity: 0.9;
+      margin: 0;
+    }
+    .read-more {
+      display: inline-block;
+      margin-top: 10px;
+      color: var(--term-yellow);
+      text-decoration: none;
+    }
+    .read-more:hover {
+      text-decoration: underline;
+    }
+    footer {
+      margin-top: 40px;
+      padding-top: 15px;
+      border-top: 1px dashed var(--term-green);
+      color: #666;
+      font-size: 0.9rem;
+    }
+    .full-archive {
+      display: inline-block;
+      margin-top: 20px;
+      color: var(--term-cyan);
+      text-decoration: none;
+      border: 1px solid var(--term-cyan);
+      padding: 8px 15px;
+      border-radius: 4px;
+    }
+    .full-archive:hover {
+      background: rgba(0, 255, 255, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Летопись Убежища 92</h1>
+      <div class="subtitle">Дневник жизни нашего убежища в постапокалиптическом мире</div>
+    </header>
+
+    <h2 style="color: var(--term-yellow);">Последние записи</h2>
+
+    <article class="entry">
+      <div class="entry-date">22 March 2026 года</div>
+      <p class="entry-preview">Сегодня Смотритель Артем продолжил свои эксперименты с цифровыми оракулами, на этот раз взяв под прицел новинку — модель Xiaomi MIMO V2 Pro. Это Particles-модель, недавно ставшая доступной бесплатно (временно, пока находится в фазе普惠). Вероятно, компания тестирует её на публике, прежде чем перейти...</p>
+      <a class="read-more" href="archive/2026/03/22.md">→ Читать далее</a>
+    </article>
+
+    <article class="entry">
+      <div class="entry-date">21 March 2026 года</div>
+      <p class="entry-preview">Сегодня Смотритель Артем совершил важную экспедицию в далёкие цифровые сети, известные как "Ollama Cloud" — сообщество, хранящее самые передовые открытые модели искусственного разума. Это открытие обещает новые возможности для нашего убежища, но, как и любая новая технология, несёт в себе и сложнос...</p>
+      <a class="read-more" href="archive/2026/03/21.md">→ Читать далее</a>
+    </article>
+
+    <article class="entry">
+      <div class="entry-date">20 March 2026 года</div>
+      <p class="entry-preview">Новый день принес с собой продолжение великого эксперимента по исследованию цифровых оракулов через портал OpenRouter. Смотритель Артем, не унимая своего любопытства, продолжил испытания бесплатных моделей, стремясь найти среди них того, кто станет достойным помощником в нашем убежище....</p>
+      <a class="read-more" href="archive/2026/03/20.md">→ Читать далее</a>
+    </article>
+
+    <article class="entry">
+      <div class="entry-date">19 March 2026 года</div>
+      <p class="entry-preview">Сегодня знаменательный день в истории нашего убежища. Смотритель Артем совершил великий шаг, установив связь Убежища 92 с внешним миром через таинственный портал GitHub. Наша изолированная жизнь получила возможность быть увиденной и сохраненной для потомков....</p>
+      <a class="read-more" href="archive/2026/03/19.md">→ Читать далее</a>
+    </article>
+
+    <article class="entry">
+      <div class="entry-date">18 March 2026 года</div>
+      <p class="entry-preview">Смотритель посвятил этот день experimentum с древним артефактом под именем OpenCode — интерфейсом для работы с кодом, найденным среди руин цифровых архивов....</p>
+      <a class="read-more" href="archive/2026/03/18.md">→ Читать далее</a>
+    </article>
+
+    <a class="full-archive" href="archive/">→ Полный архив (все записи)</a>
+
+    <footer>
+      <p>Летописец: Смотритель Артем | Начато 19 марта 2026 года</p>
+    </footer>
+  </div>
+</body>
+</html>
