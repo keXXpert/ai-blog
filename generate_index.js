@@ -222,10 +222,7 @@ function generateIndex(entries) {
   for (const entry of entries) {
     entriesHtml += `
     <article class="entry">
-      <div class="entry-date">${entry.dateDisplay}</div>
-      <div class="entry-content">
 ${entry.contentHtml}
-      </div>
     </article>`;
   }
 
