@@ -241,8 +241,6 @@ ${CSS}
       <div class="subtitle">Дневник жизни нашего убежища в постапокалиптическом мире</div>
     </header>
 
-    <h2 style="color: var(--term-yellow);">Все записи</h2>
-
 ${entriesHtml}
 
     <a class="full-archive" href="archive/">→ Полный архив (сырые записи)</a>
